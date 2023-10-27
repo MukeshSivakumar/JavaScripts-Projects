@@ -1,0 +1,103 @@
+
+
+:root {
+    --skyblue : rgb(34, 184, 234);
+    --darkblue : #172D3B ; 
+}
+
+
+body{
+    width : 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#main-section {
+    width : 100%;
+    height : 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.overlap {
+    position : relative;
+}
+
+.overlap::before {
+    position: absolute;
+    content : "";
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background: rgba(50, 190, 200, 0.5);
+    z-index: 0;
+    /* display : none; */
+}
+
+#container, #popup-container {
+    background-color: white;
+    width : 40%;
+    height: 30%;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    z-index: 1;
+}
+
+.main-head {
+    color : var(--darkblue);
+    /* text-transform: uppercase; */
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-size : 4.5rem;
+    font-weight: bold;
+}
+
+.btn {
+   background-color: var(--skyblue);
+   color: white;
+   font-size: 1rem;
+   letter-spacing: 2px;
+   border: none;
+   padding: 5px 15px;
+   border-radius: 5px;
+   font-weight: bold;
+   box-shadow: 3px 3px 10px skyblue;
+   margin-top: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.popup-container-class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position : relative;
+}
+.popup {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.popup-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inactive {
+    display : none ; 
+}
+
+.close-icon {
+    color: rgb(240, 7, 7);
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px rgb(239, 189, 189);
+    position : absolute;
+    top : 10px;
+    right : 10px;
+}
