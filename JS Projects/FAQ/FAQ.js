@@ -23,6 +23,8 @@ down_btnList.forEach(function(btn,index){
              }
         });
     });
+
+    //  handle up button click 
     up_btnList[index].addEventListener("click",function(){
             console.log(up_btnList[index],index);
             answerList[index].classList.toggle("d-none");
