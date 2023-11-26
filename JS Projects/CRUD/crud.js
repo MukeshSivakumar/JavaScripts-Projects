@@ -169,7 +169,7 @@ function inserFormData(data)
      </td>`
     //  console.log(data);
 
-     rowData.append(tableRow);
+     rowData.appendChild(tableRow);
     //  rowData.innerHTML += `<tr>
     //                      <td>${data["productCode"]}</td>
     //                      <td>${data["product"]}</td>
